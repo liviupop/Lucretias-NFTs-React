@@ -10,7 +10,7 @@ const Home = (props) => {
     <div className={styles['container']}>
       <Helmet>
         <title>
-          Lucretzia's Tookit for the Nroken Hearted NFTs - Elrond Network
+          Lucretzia's Tookit for the Broken Hearted NFTs - Elrond Network
         </title>
         <meta
           name="description"
@@ -84,8 +84,7 @@ const Home = (props) => {
             <br></br>
             <span>
               <span>
-                This collection was minted manually in October 2021. There was
-                no market place or easy method for minting an NFT.
+                This collection was minted manually in October 2021. There was no marketplace or easy method for minting an NFT. For each NFT the metadata was copy-pasted manually, the image hash copied from IFPS, and  the transaction signed in the Maiar app. Mistakes were made, eyes were abused, but it was such an exciting time. This is the most beloved collection. This is the first child. The owners of those NFTs will be the most pampered and spoiled. 
                 <span
                   dangerouslySetInnerHTML={{
                     __html: ' ',

@@ -1,0 +1,193 @@
+.container {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.Hero {
+  width: 100%;
+  display: flex;
+  padding: var(--dl-space-space-twounits);
+  max-width: var(--dl-size-size-maxwidth);
+  min-height: 80vh;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.image {
+  width: 25rem;
+  object-fit: cover;
+}
+.container1 {
+  display: flex;
+  margin-left: var(--dl-space-space-twounits);
+  flex-direction: column;
+}
+.text {
+  font-size: 3rem;
+  font-family: Nunito;
+}
+.text01 {
+  margin-top: var(--dl-space-space-unit);
+  font-family: Nunito;
+  font-weight: 600;
+  margin-bottom: var(--dl-space-space-unit);
+}
+.text02 {
+  font-family: Nunito;
+  font-weight: 600;
+}
+.text04 {
+  font-family: Nunito;
+  font-weight: 600;
+}
+.BtnGroup {
+  display: flex;
+  margin-top: var(--dl-space-space-unit);
+  align-items: center;
+  margin-bottom: var(--dl-space-space-unit);
+  flex-direction: row;
+}
+.button {
+  color: var(--dl-color-gray-white);
+  transition: 0.3s;
+  font-family: Nunito;
+  padding-top: var(--dl-space-space-unit);
+  padding-left: var(--dl-space-space-twounits);
+  padding-right: var(--dl-space-space-twounits);
+  padding-bottom: var(--dl-space-space-unit);
+  background-color: var(--dl-color-gray-black);
+}
+.button:hover {
+  transform: scale(1.02);
+}
+.button1 {
+  transition: 0.3s;
+  font-family: Nunito;
+  margin-left: var(--dl-space-space-unit);
+  padding-top: var(--dl-space-space-unit);
+  padding-left: var(--dl-space-space-twounits);
+  padding-right: var(--dl-space-space-twounits);
+  padding-bottom: var(--dl-space-space-unit);
+}
+.button1:hover {
+  transform: scale(1.02);
+}
+.text05 {
+  color: var(--dl-color-gray-700);
+  font-family: Nunito;
+  padding-left: var(--dl-space-space-threeunits);
+  padding-right: var(--dl-space-space-threeunits);
+}
+.Text08 {
+  height: 100%;
+  align-self: flex-start;
+  margin-top: var(--dl-space-space-twounits);
+  text-align: justify;
+  font-family: Nunito;
+  margin-bottom: var(--dl-space-space-twounits);
+  padding-right: var(--dl-space-space-threeunits);
+}
+.link {
+  display: contents;
+}
+.image1 {
+  right: 52px;
+  width: 50px;
+  bottom: 13px;
+  position: absolute;
+  object-fit: cover;
+  text-decoration: none;
+}
+@media(max-width: 991px) {
+  .Hero {
+    padding: var(--dl-space-space-threeunits);
+    flex-direction: column;
+  }
+  .image {
+    order: 2;
+    height: 600px;
+  }
+  .container1 {
+    align-items: center;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: var(--dl-space-space-twounits);
+  }
+  .text {
+    text-align: center;
+  }
+  .text05 {
+    text-align: left;
+  }
+  .Text08 {
+    text-align: left;
+    padding-left: var(--dl-space-space-fourunits);
+  }
+  .image1 {
+    right: 56px;
+    bottom: 55px;
+  }
+}
+@media(max-width: 767px) {
+  .Hero {
+    padding-left: var(--dl-space-space-twounits);
+    padding-right: var(--dl-space-space-twounits);
+  }
+  .image {
+    width: 80%;
+  }
+  .text {
+    text-align: center;
+  }
+  .text01 {
+    text-align: left;
+  }
+  .text05 {
+    padding-left: var(--dl-space-space-unit);
+    padding-right: var(--dl-space-space-unit);
+  }
+  .Text08 {
+    text-align: justify;
+  }
+  .image1 {
+    right: 38px;
+    bottom: 56px;
+  }
+}
+@media(max-width: 479px) {
+  .Hero {
+    padding-top: var(--dl-space-space-twounits);
+    padding-left: var(--dl-space-space-unit);
+    padding-right: var(--dl-space-space-unit);
+    padding-bottom: var(--dl-space-space-twounits);
+  }
+  .container1 {
+    margin-bottom: var(--dl-space-space-unit);
+  }
+  .text {
+    text-align: left;
+  }
+  .text01 {
+    text-align: left;
+  }
+  .BtnGroup {
+    flex-direction: column;
+  }
+  .button1 {
+    margin-top: var(--dl-space-space-unit);
+    margin-left: 0px;
+  }
+  .Text08 {
+    text-align: justify;
+    padding-left: var(--dl-space-space-unit);
+    padding-right: var(--dl-space-space-unit);
+  }
+  .image1 {
+    right: 7px;
+    bottom: 35px;
+  }
+}

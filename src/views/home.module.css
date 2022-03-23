@@ -6,11 +6,12 @@
   align-items: center;
   flex-direction: column;
   justify-content: flex-start;
+  background-color: #ddde11;
 }
 .Hero {
   width: 100%;
   display: flex;
-  padding: var(--dl-space-space-twounits);
+  padding: var(--dl-space-space-unit);
   max-width: var(--dl-size-size-maxwidth);
   min-height: 80vh;
   align-items: center;
@@ -18,7 +19,8 @@
   justify-content: space-between;
 }
 .image {
-  width: 25rem;
+  width: 257px;
+  height: 443px;
   object-fit: cover;
 }
 .container1 {
@@ -40,7 +42,7 @@
   font-family: Nunito;
   font-weight: 600;
 }
-.text04 {
+.text03 {
   font-family: Nunito;
   font-weight: 600;
 }
@@ -51,20 +53,21 @@
   margin-bottom: var(--dl-space-space-unit);
   flex-direction: row;
 }
-.button {
-  color: var(--dl-color-gray-white);
+.navlink {
+  color: #ddde11;
   transition: 0.3s;
   font-family: Nunito;
   padding-top: var(--dl-space-space-unit);
   padding-left: var(--dl-space-space-twounits);
   padding-right: var(--dl-space-space-twounits);
   padding-bottom: var(--dl-space-space-unit);
+  text-decoration: none;
   background-color: var(--dl-color-gray-black);
 }
-.button:hover {
+.navlink:hover {
   transform: scale(1.02);
 }
-.button1 {
+.button {
   transition: 0.3s;
   font-family: Nunito;
   margin-left: var(--dl-space-space-unit);
@@ -73,17 +76,25 @@
   padding-right: var(--dl-space-space-twounits);
   padding-bottom: var(--dl-space-space-unit);
 }
-.button1:hover {
+.button:hover {
   transform: scale(1.02);
 }
-.text05 {
-  color: var(--dl-color-gray-700);
+.text04 {
+  color: #ddde11;
+  font-size: 20px;
   font-family: Nunito;
-  padding-left: var(--dl-space-space-threeunits);
-  padding-right: var(--dl-space-space-threeunits);
+  line-height: 1.5;
+  padding-top: var(--dl-space-space-twounits);
+  padding-left: var(--dl-space-space-twounits);
+  padding-right: var(--dl-space-space-twounits);
+  letter-spacing: 10%;
+  padding-bottom: var(--dl-space-space-twounits);
+  text-transform: uppercase;
+  background-color: #000000;
 }
-.Text08 {
+.Text07 {
   height: 100%;
+  font-size: 20px;
   align-self: flex-start;
   margin-top: var(--dl-space-space-twounits);
   text-align: justify;
@@ -95,9 +106,9 @@
   display: contents;
 }
 .image1 {
-  right: 52px;
+  right: 26px;
   width: 50px;
-  bottom: 13px;
+  bottom: 68px;
   position: absolute;
   object-fit: cover;
   text-decoration: none;
@@ -120,10 +131,13 @@
   .text {
     text-align: center;
   }
-  .text05 {
+  .text04 {
     text-align: left;
+    padding-left: var(--dl-space-space-twounits);
+    padding-right: var(--dl-space-space-twounits);
+    padding-bottom: var(--dl-space-space-twounits);
   }
-  .Text08 {
+  .Text07 {
     text-align: left;
     padding-left: var(--dl-space-space-fourunits);
   }
@@ -146,11 +160,11 @@
   .text01 {
     text-align: left;
   }
-  .text05 {
+  .text04 {
     padding-left: var(--dl-space-space-unit);
     padding-right: var(--dl-space-space-unit);
   }
-  .Text08 {
+  .Text07 {
     text-align: justify;
   }
   .image1 {
@@ -177,12 +191,17 @@
   .BtnGroup {
     flex-direction: column;
   }
-  .button1 {
+  .button {
     margin-top: var(--dl-space-space-unit);
     margin-left: 0px;
   }
-  .Text08 {
+  .text04 {
+    font-size: 20px;
+  }
+  .Text07 {
+    font-size: 20px;
     text-align: justify;
+    font-family: Nunito;
     padding-left: var(--dl-space-space-unit);
     padding-right: var(--dl-space-space-unit);
   }

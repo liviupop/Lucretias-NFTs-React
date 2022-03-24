@@ -83,47 +83,80 @@ const Home = (props) => {
           </span>
           <span className={styles['Text07']}>
             <span></span>
-            <br></br>
             <span>
-              <span>
-                This collection was minted manually in October 2021. There was
-                no market place or easy method for minting an NFT.
-                <span
-                  dangerouslySetInnerHTML={{
-                    __html: ' ',
-                  }}
-                />
-              </span>
-            </span>
-            <br></br>
-            <span>
-              There are 20 editions of 16 scenes. 16 scenes are for sale, 2 for
-              gifts and giveaways, 2 for the team.
+              This collection was minted manually in October 2021. There was no
+              marketplace or easy method for minting an NFT. For each NFT the
+              metadata was copy-pasted manually, the image hash copied from
+              IFPS, and the transaction signed in the Maiar app. Mistakes were
+              made, eyes were abused, but it was such an exciting time. This is
+              the most beloved collection. The owners of those NFTs will be the
+              most pampered and spoiled.
               <span
                 dangerouslySetInnerHTML={{
                   __html: ' ',
                 }}
               />
-            </span>
-            <span>
-              There are 10 editions of the backcover. 8 are for sale, 1 for an
-              auction, 1 for the team.
             </span>
             <br></br>
             <span></span>
             <br></br>
             <span>
-              Each back cover comes with 0.1% of all future royalties.
+              There are 20 editions of 16 scenes.
               <span
                 dangerouslySetInnerHTML={{
                   __html: ' ',
                 }}
               />
             </span>
+            <br></br>
+            <span>
+              16 scenes are for sale, 2 for gifts &amp; giveaways, 2 for the
+              team.
+              <span
+                dangerouslySetInnerHTML={{
+                  __html: ' ',
+                }}
+              />
+            </span>
+            <br></br>
+            <span></span>
+            <span>
+              There are 10 editions of the back-cover.
+              <span
+                dangerouslySetInnerHTML={{
+                  __html: ' ',
+                }}
+              />
+            </span>
+            <br></br>
+            <span>8 are for sale, 1 for an auction, 1 for the team.</span>
+            <br></br>
+            <span></span>
+            <br></br>
+            <span>
+              Each back-cover comes with 0.1% of all future royalties.
+              <span
+                dangerouslySetInnerHTML={{
+                  __html: ' ',
+                }}
+              />
+            </span>
+            <br></br>
+            <span></span>
             <span>
               You can claim it if you have a full collection from the same
               edition (eg. all 16 scenes from 6/20).
             </span>
+            <span>
+              <span
+                dangerouslySetInnerHTML={{
+                  __html: ' ',
+                }}
+              />
+            </span>
+            <br></br>
+            <span></span>
+            <span></span>
           </span>
         </div>
       </div>

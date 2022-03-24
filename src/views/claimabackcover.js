@@ -33,7 +33,7 @@ const Claimabackcover = (props) => {
       </Helmet>
       <img
         alt="image"
-        src="/playground_assets/lucre_back-300w.png"
+        src="/playground_assets/bird_flying-300w.png"
         className={styles['image']}
       />
       <h1 className={styles['text']}>
@@ -62,7 +62,7 @@ const Claimabackcover = (props) => {
       </Link>
       <img
         alt="image"
-        src="/playground_assets/heart_and_star-200w.png"
+        src="/playground_assets/backside-200w.png"
         loading="eager"
         className={styles['image1']}
       />

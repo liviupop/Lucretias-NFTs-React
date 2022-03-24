@@ -11,7 +11,7 @@ const Home = (props) => {
     <div className={styles['container']}>
       <Helmet>
         <title>
-          Lucretzia's Tookit for the Nroken Hearted NFTs - Elrond Network
+          Lucretzia's Tookit for the Broken Hearted NFTs - Elrond Network
         </title>
         <meta
           name="description"
@@ -19,7 +19,7 @@ const Home = (props) => {
         />
         <meta
           property="og:title"
-          content="Lucretzia's Tookit for the Nroken Hearted NFTs - Elrond Network"
+          content="Lucretzia's Tookit for the Broken Hearted NFTs - Elrond Network"
         />
         <meta
           property="og:description"
@@ -53,7 +53,7 @@ const Home = (props) => {
           </h2>
           <div className={styles['BtnGroup']}>
             <Link
-              to="/page"
+              to="/mintascene"
               className={` ${styles['navlink']} ${projectStyles['button']} `}
             >
               Mint a scene
@@ -63,11 +63,12 @@ const Home = (props) => {
                 }}
               />
             </Link>
-            <button
-              className={` ${styles['button']} ${projectStyles['button']} `}
+            <Link
+              to="/claimabackcover"
+              className={` ${styles['navlink1']} ${projectStyles['button']} `}
             >
               Claim a back cover
-            </button>
+            </Link>
           </div>
           <span className={styles['text04']}>
             <span>

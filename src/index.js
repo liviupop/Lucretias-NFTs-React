@@ -4,14 +4,16 @@ import { BrowserRouter as Router, Route } from 'react-router-dom'
 
 import './style.module.css'
 import Home from './views/home'
-import Page from './views/page'
+import Mintascene from './views/mintascene'
+import Claimabackcover from './views/claimabackcover'
 
 const App = () => {
   return (
     <Router>
       <div>
         <Route exact component={Home} path="/" />
-        <Route exact component={Page} path="/page" />
+        <Route exact component={Mintascene} path="/mintascene" />
+        <Route exact component={Claimabackcover} path="/claimabackcover" />
       </div>
     </Router>
   )

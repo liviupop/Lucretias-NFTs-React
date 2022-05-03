@@ -2,13 +2,12 @@ import React from 'react'
 
 import PropTypes from 'prop-types'
 
-import projectStyles from '../style.module.css'
-import styles from './component1.module.css'
+import './component1.css'
 
 const Component1 = (props) => {
   return (
-    <div className={styles['container']}>
-      <button className={projectStyles['button']}>{props.button}</button>
+    <div className="component1-container">
+      <button className="button">{props.button}</button>
     </div>
   )
 }

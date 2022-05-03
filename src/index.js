@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 
-import './style.module.css'
+import './style.css'
 import Claimabackcover from './views/claimabackcover'
 import Home from './views/home'
 import Mintascene from './views/mintascene'

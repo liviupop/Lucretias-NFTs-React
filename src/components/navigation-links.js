@@ -2,16 +2,16 @@ import React from 'react'
 
 import PropTypes from 'prop-types'
 
-import styles from './navigation-links.module.css'
+import './navigation-links.css'
 
 const NavigationLinks = (props) => {
   return (
-    <nav className={` ${styles['Nav']} ${styles[props.rootClassName]} `}>
-      <span className={styles['text']}>{props.text}</span>
-      <span className={styles['text1']}>{props.text1}</span>
-      <span className={styles['text2']}>{props.text2}</span>
-      <span className={styles['text3']}>{props.text3}</span>
-      <span className={styles['text4']}>{props.text4}</span>
+    <nav className={`navigation-links-nav ${props.rootClassName} `}>
+      <span className="navigation-links-text">{props.text}</span>
+      <span className="navigation-links-text1">{props.text1}</span>
+      <span className="navigation-links-text2">{props.text2}</span>
+      <span className="navigation-links-text3">{props.text3}</span>
+      <span className="navigation-links-text4">{props.text4}</span>
     </nav>
   )
 }

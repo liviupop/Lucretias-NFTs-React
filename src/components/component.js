@@ -2,15 +2,15 @@ import React from 'react'
 
 import PropTypes from 'prop-types'
 
-import styles from './component.module.css'
+import './component.css'
 
 const AppComponent = (props) => {
   return (
-    <div className={` ${styles['container']} ${styles[props.rootClassName]} `}>
+    <div className={`component-container ${props.rootClassName} `}>
       <img
         alt={props.image_alt}
         src={props.image_src}
-        className={styles['image']}
+        className="component-image"
       />
     </div>
   )

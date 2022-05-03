@@ -3,12 +3,11 @@ import { Link } from 'react-router-dom'
 
 import { Helmet } from 'react-helmet'
 
-import projectStyles from '../style.module.css'
-import styles from './claimabackcover.module.css'
+import './claimabackcover.css'
 
 const Claimabackcover = (props) => {
   return (
-    <div className={styles['container']}>
+    <div className="claimabackcover-container">
       <Helmet>
         <title>
           Claim a backcover - Lucretzia's Tookit for the Broken Hearted NFTs -
@@ -34,10 +33,10 @@ const Claimabackcover = (props) => {
       <img
         alt="image"
         src="/playground_assets/bird_flying-300w.png"
-        className={styles['image']}
+        className="claimabackcover-image"
       />
-      <h1 className={styles['text']}>
-        <span className={styles['text1']}>
+      <h1 className="claimabackcover-text">
+        <span className="claimabackcover-text1">
           Connect your wallet to
           <span
             dangerouslySetInnerHTML={{
@@ -46,25 +45,19 @@ const Claimabackcover = (props) => {
           />
         </span>
         <br></br>
-        <span className={styles['text3']}>claim your back cover NFT</span>
+        <span className="claimabackcover-text3">claim your back cover NFT</span>
       </h1>
-      <Link
-        to="/"
-        className={` ${styles['navlink']} ${projectStyles['button']} `}
-      >
+      <Link to="/" className="claimabackcover-navlink button">
         Web Wallet
       </Link>
-      <Link
-        to="/"
-        className={` ${styles['navlink1']} ${projectStyles['button']} `}
-      >
+      <Link to="/" className="claimabackcover-navlink1 button">
         Maiar App
       </Link>
       <img
         alt="image"
         src="/playground_assets/backside-200w.png"
         loading="eager"
-        className={styles['image1']}
+        className="claimabackcover-image1"
       />
     </div>
   )

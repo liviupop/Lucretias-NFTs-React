@@ -3,12 +3,11 @@ import { Link } from 'react-router-dom'
 
 import { Helmet } from 'react-helmet'
 
-import projectStyles from '../style.module.css'
-import styles from './mintascene.module.css'
+import './mintascene.css'
 
 const Mintascene = (props) => {
   return (
-    <div className={styles['container']}>
+    <div className="mintascene-container">
       <Helmet>
         <title>
           Mintascene - Lucretzia's Tookit for the Broken Hearted NFTs - Elrond
@@ -34,10 +33,10 @@ const Mintascene = (props) => {
       <img
         alt="image"
         src="/playground_assets/birds_flying_high_ypu_know_how_i_feel-300w.png"
-        className={styles['image']}
+        className="mintascene-image"
       />
-      <h1 className={styles['text']}>
-        <span className={styles['text1']}>
+      <h1 className="mintascene-text">
+        <span className="mintascene-text1">
           Connect your wallet
           <span
             dangerouslySetInnerHTML={{
@@ -46,25 +45,19 @@ const Mintascene = (props) => {
           />
         </span>
         <br></br>
-        <span className={styles['text3']}>to mint a random scene</span>
+        <span className="mintascene-text3">to mint a random scene</span>
       </h1>
-      <Link
-        to="/"
-        className={` ${styles['navlink']} ${projectStyles['button']} `}
-      >
+      <Link to="/" className="mintascene-navlink button">
         Web Wallet
       </Link>
-      <Link
-        to="/"
-        className={` ${styles['navlink1']} ${projectStyles['button']} `}
-      >
+      <Link to="/" className="mintascene-navlink1 button">
         Maiar App
       </Link>
       <img
         alt="image"
         src="/playground_assets/lucre_hiding-200w.png"
         loading="eager"
-        className={styles['image1']}
+        className="mintascene-image1"
       />
     </div>
   )

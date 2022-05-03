@@ -3,12 +3,11 @@ import { Link } from 'react-router-dom'
 
 import { Helmet } from 'react-helmet'
 
-import projectStyles from '../style.module.css'
-import styles from './home.module.css'
+import './home.css'
 
 const Home = (props) => {
   return (
-    <div className={styles['container']}>
+    <div className="home-container">
       <Helmet>
         <title>
           Lucretzia's Tookit for the Broken Hearted NFTs - Elrond Network
@@ -30,18 +29,18 @@ const Home = (props) => {
           content="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/3b346dcc-320a-4d97-a054-0702b2a61e52/16f0d2d8-a46d-4db4-9fd6-3ce4850ccfb0?org_if_sml=1"
         />
       </Helmet>
-      <div className={styles['Hero']}>
+      <div className="home-hero">
         <img
           alt="image"
           src="/playground_assets/lucretzia-small-1200w.png"
-          className={styles['image']}
+          className="home-image"
         />
-        <div className={styles['container1']}>
-          <h1 className={styles['text']}>
+        <div className="home-container1">
+          <h1 className="home-text">
             Lucretzia&apos;s Toolkit for the Broken Hearted. The OG Collection.
           </h1>
-          <h2 className={styles['text01']}>
-            <span className={styles['text02']}>
+          <h2 className="home-text01">
+            <span className="home-text02">
               333 Handmade NFTs.
               <span
                 dangerouslySetInnerHTML={{
@@ -49,13 +48,10 @@ const Home = (props) => {
                 }}
               />
             </span>
-            <span className={styles['text03']}>A true labour of love</span>
+            <span className="home-text03">A true labour of love</span>
           </h2>
-          <div className={styles['BtnGroup']}>
-            <Link
-              to="/mintascene"
-              className={` ${styles['navlink']} ${projectStyles['button']} `}
-            >
+          <div className="home-btn-group">
+            <Link to="/mintascene" className="home-navlink button">
               Mint a scene
               <span
                 dangerouslySetInnerHTML={{
@@ -63,25 +59,27 @@ const Home = (props) => {
                 }}
               />
             </Link>
-            <Link
-              to="/claimabackcover"
-              className={` ${styles['navlink1']} ${projectStyles['button']} `}
-            >
+            <Link to="/claimabackcover" className="home-navlink1 button">
               Claim a back cover
             </Link>
           </div>
-          <span className={styles['text04']}>
+          <span className="home-text04">
             <span>
               Lucretzia has a broken heart. Instead of going to sleep with her
               broken heart, she prefers being creative and finding various ways
               of using it. She is still in search, so if you know a better, more
               playful, ingenious way of using a broken heart, please let her
               know.
+              <span
+                dangerouslySetInnerHTML={{
+                  __html: ' ',
+                }}
+              />
             </span>
             <br></br>
             <span></span>
           </span>
-          <span className={styles['Text07']}>
+          <span className="home-text07">
             <span></span>
             <span>
               This collection was minted manually in October 2021. There was no
@@ -164,12 +162,12 @@ const Home = (props) => {
         href="https://bit.ly/LucreReRoadmap"
         target="_blank"
         rel="noreferrer noopener"
-        className={styles['link']}
+        className="home-link"
       >
         <img
           alt="image"
           src="/playground_assets/lucrelogo-200w.png"
-          className={styles['image1']}
+          className="home-image1"
         />
       </a>
     </div>

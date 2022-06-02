@@ -38,5 +38,22 @@ const fetchTransactions = (url: string) =>
     }
   };
 
+const fetchRemainingSupply = () =>
+  async function getRemainingSupply() {
+    try {
+      const { data } = await axios.get('https://api.elrond.com/accounts/erd1qqqqqqqqqqqqqpgqdlra9tp0ka244jkscjaur3j3732g0kjqyl5s5z92fk/nfts/count');
+
+      return {
+        data: data,
+        success: data !== undefined
+      };
+    } catch (err) {
+      return {
+        success: false
+      };
+    }
+  };
+
 export const getTransactions = fetchTransactions('/transactions');
 export const getTransactionsCount = fetchTransactions('/transactions/count');
+export const getRemainingSupply = fetchRemainingSupply();

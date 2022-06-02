@@ -40,11 +40,11 @@ export const UnlockRoute: () => JSX.Element = () => {
             loginButtonText={'Web wallet'}
             className={'btn btn__secondary '}
           />
-          <LedgerLoginButton
+          {/* <LedgerLoginButton
             loginButtonText={'Ledger'}
             callbackRoute={routeNames.home}
             className={'btn btn__secondary'}
-          />
+          /> */}
           <WalletConnectLoginButton
             callbackRoute={routeNames.home}
             loginButtonText={'Maiar'}

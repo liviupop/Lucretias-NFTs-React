@@ -88,39 +88,46 @@ const Home = () => {
             Lucretzia`s Toolkit for the Broken Hearted. The OG Collection.
           </h1>
           <h4 className='py-3'>333 ({remainingSupply} left) Handmade NFTs. A true labour of love</h4>
-          <div>
-            <a
-              href='#'
-              onClick={() => handleQtyChange(-1)}
-              className='btn btn__primary mr-3'
-              data-testid='loginBtn'
-            >
-              -
-            </a>
-            <a
-              href='#'
-              onClick={handleMint}
-              className='btn btn__primary mr-3'
-              data-testid='loginBtn'
-            >
-              Mint {quantity === 1 ? 'a' : quantity} scene{quantity > 1 && 's'}
-            </a>
-            <a
-              href='#'
-              onClick={() => handleQtyChange(1)}
-              className='btn btn__primary mr-3'
-              data-testid='loginBtn'
-            >
-              +
-            </a>
-            <a
-              href='#'
-              onClick={handleClaimPingMessage}
-              className='btn btn__secondary'
-              data-testid='loginBtn'
-            >
-              Claim a back cover
-            </a>
+          <div className='container'>
+            <div className='row'>
+              <div className='col-sm-12 col-lg-5 d-flex justify-content-center mt-5' style={{width: '100%'}}>
+                <a
+                  href='#'
+                  onClick={() => handleQtyChange(-1)}
+                  className='btn btn__primary mr-3'
+                  data-testid='loginBtn'
+                >
+                  -
+                </a>
+                <a
+                  href='#'
+                  onClick={handleMint}
+                  className='btn btn__primary mr-3'
+                  data-testid='loginBtn'
+                >
+                  Mint {quantity === 1 ? 'a' : quantity} scene{quantity > 1 && 's'}
+                </a>
+                <a
+                  href='#'
+                  onClick={() => handleQtyChange(1)}
+                  className='btn btn__primary mr-3'
+                  data-testid='loginBtn'
+                >
+                  +
+                </a>
+              </div>
+              <div className='col-sm-12 col-lg-6 d-flex justify-content-left mt-5'>
+                <a
+                  href='#'
+                  onClick={handleClaimPingMessage}
+                  className='btn btn__secondary'
+                  data-testid='loginBtn'
+                  style={{ width: '100%' }}
+                >
+                  Claim a back cover
+                </a>
+              </div>
+            </div>
           </div>
 
           <div className='box my-4'>

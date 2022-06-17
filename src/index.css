@@ -20,3 +20,7 @@ code {
 #accessWalletBtn {
   color: black!important;
 }
+
+.btn__secondary_title {
+  display: none!important;
+}

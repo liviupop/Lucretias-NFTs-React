@@ -30,11 +30,11 @@ export const UnlockRoute: () => JSX.Element = () => {
           <span>claim your back cover NFT</span>
         </h3>
         <div className='d-flex flex-column'>
-          <ExtensionLoginButton
+          {/* <ExtensionLoginButton
             callbackRoute={routeNames.home}
             loginButtonText={'Extension'}
             className={'btn btn__secondary '}
-          />
+          /> */}
           <WebWalletLoginButton
             callbackRoute={routeNames.home}
             loginButtonText={'Web wallet'}
